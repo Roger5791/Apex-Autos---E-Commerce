@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Apex Autos</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    
+    <script src="https://kit.fontawesome.com/f2ef633fe4.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- ==========Navigation-Bar============= -->
+
+<header>
+
+    <!-- ============ Top-Nav ============= -->
+    
+        <div class="nav-bar-top-container">
+            <div class="nt-left">
+                <ul class="header-links">
+                    <li><i class="fa-solid fa-phone"></i>
+                    <a href="tel:+25625921589">+(91)98-1202-0088</a></li>
+                    <li>
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:apex.help.org">apex.help.org</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nt-right">
+                <ul class="header-links">
+                    <li>
+                        <button type="button" class="sideCartToggler">
+                            Track Your Order
+                        </button>
+                    </li>
+                    <li>
+                        <i class="far fa-user"></i>
+                        <a href="login.html">Login /</a>
+                       <a href="login.html"> Sign Up</a>
+                    </li>
+                    <li>
+                        <div class="header-social">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.vimeo.com/"><i class="fab fa-vimeo-v"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
+    
+    
+    
+</header>
+
+<!-- ============ Main-Nav ============= -->
+    
+<div class="nav-main">
+    <div class="logo-bg-shape"></div>
+
+        <div class="header-logo">
+            <a href="index.html"><img height="80" src="Images/logo.svg" alt="Apex"></a>
+        </div>
+
+    <div class="nav-main-middle">
+        <div class="nm-middle-con">
+            <nav class="nm-middle">
+                <ul>
+                    <li class="">
+                        <a href="index.html">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+
+                    <li class="">
+                        <a href="shop.html">STORE</a>                       
+                    </li>
+                    
+                    <li class="">
+                        <a href="blog.html">BLOG</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="red">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- <button type="button" class=""><i class="far fa-bars"></i></button> -->
+        </div>
+    </div>
+
+    <div class="nav-main-right">
+        <div class="nm-right-con">
+            <button type="button" class="nav-icon-btn searchIconToggle"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            <button type="button" class="sideCartToggle nav-icon-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge">4</span>
+            </button>
+
+            <button type="button" class="mobile-toggler nav-icon-btn"><i class="fa-solid fa-bars"></i></button>
+
+            <a href="shop.html" class="p-btn-dark">PURCHASE NOW</a>
+        </div>
+    </div>
+</div>
+
+<main>
+
+ <!-- ==============Cart-popup============= -->   
+
+    <div class="sidemenu-content">
+        <div class="cart-left"></div>
+        <div class="cart-right">
+        <button class="closeButton" onclick="closeCart()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="cart-container">
+            <h3>Shopping cart</h3>
+            <hr class="line">
+            <div class="cart-content">
+                <ul >
+                    <li class="cart-item">
+                        <a href="#">
+                            <img src="Images/footer-recent-post-1.png" alt="Cart Image">
+                        </a> 
+                        <span class="item-name"> 
+                            <strong>Car Engine Plug</strong> <br> 
+                                <span class="quantity"> 1 ×</span>
+                            <span class="cart-price">$ 940.00</span>      
+                        </span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <hr class="line">
+                    <li class="cart-item">
+                        <a href="#">
+                            <img src="Images/footer-recent-post-2.png" alt="Cart Image">
+                        </a> 
+                        <span class="item-name"> 
+                            <strong>Car Air Filter</strong> <br> 
+                                <span class="quantity"> 1 ×</span>
+                            <span class="cart-price">$ 899.00</span>      
+                        </span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <hr class="line">
+                    <li class="cart-item">
+                        <a href="#">
+                            <img src="Images/recent-post-1-1.png" alt="Cart Image">
+                        </a> 
+                        <span class="item-name"> 
+                            <strong>CSK Red Wheel</strong> <br> 
+                                <span class="quantity"> 1 ×</span>
+                            <span class="cart-price">$ 1265.00</span>      
+                        </span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <hr class="line">
+                    <li class="cart-item">
+                        <a href="#">
+                            <img src="Images/recent-post-1-3.png" alt="Cart Image">
+                        </a> 
+                        <span class="item-name"> 
+                            <strong>Car Repair Solution</strong> <br> 
+                                <span class="quantity"> 1 ×</span>
+                            <span class="cart-price">$ 645.00</span>      
+                        </span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <hr class="line">
+                </ul>
+                <p class="cart-total">
+                    <strong>Subtotal:</strong>
+                    <span class="cart-price">
+                        $ 4398.00</span>
+                </p>
+                <p class="cart-btns">
+                    <a href="cart.html" class="p-btn-dark">View cart</a>
+                    <a href="checkout.html" class="p-btn-dark">Checkout</a>
+                </p>
+            </div>
+        </div>
+    </div>
+   
+    </div>
+
+
+    
+<!-- ====================Search-Box============= -->
+
+<div class="popup-search-box ">
+    <button class="searchClose" onclick="closeSearch()"><i class="fa-solid fa-xmark"></i></button>
+    <form action="shop.html" class="search-mid">
+        <input type="text" placeholder="What are you looking for?">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+</div>
+
+
+<!-- ==================== Mobile-Menu============== -->
+    
+<div class="sidemenu-wrapper">
+        
+    <div class="menu-left">
+    <button class="closeTab" onclick="closeTab()"><i class="fa-solid fa-xmark"></i></button>
+    <div class="menmu-container">
+        <div class="menu-logo">
+            <a href="index.html"><img src="Images/logo.svg" alt=""></a>
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="menu-right"></div>
+
+</div>
+
+
+
+
+
+<!-- =============BreadCrumb============== -->
+
+<div class="breadcumb-wrapper background-image" data-overlay="title" data-opacity="7" style="background-image: url(Images/breadcrumb-bg.png);">
+    <!-- bg animated image/ -->
+    <div class="bread-container">
+
+            <div class="bread-content">
+                <div class="breadcumb-content">
+                    <h1 class="breadcumb-title">CONTACT</h1>
+                    <ul class="breadcumb-menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li>></li>
+                        <li class="active">CONTACT</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bread-img">
+                <div class="breadcumb-thumb">
+                    <img src="Images/breadcumb-thumb.png" alt="img">
+                </div>
+            </div>
+
+        
+    </div>
+</div>
+
+
+<!-- =================Service Area=============== -->
+
+<section class="service-wrap">
+
+        <div class="service-con">
+    
+                <div class="contact-box">
+                    <div class="contact-box_icon">
+                        <i class="fa fa-location-dot"></i>
+                    </div>
+                    <div class="contact-box_info">
+                        <h4 class="contact-box_title">Our Office Address</h4>
+                        <p class="contact-box_text">835 Middle Country Rd, Selden, NY 11784,
+                            United States</p>
+                    </div>
+                </div>
+
+         
+                <div class="contact-box">
+                    <div class="contact-box_icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="contact-box_info">
+                        <h4 class="contact-box_title">Call Us Anytime</h4>
+                        <a href="mailto:help24/7@gmail.com" class="contact-box_link">
+                            apex.help.org</a>
+                        <a href="tel:(+163)-1202-0088" class="contact-box_link">+(91)98-1202-0088</a>
+                    </div>
+                </div>
+      
+   
+                <div class="contact-box">
+                    <div class="contact-box_icon">
+                        <i class="fa fa-clock"></i>
+                    </div>
+                    <div class="contact-box_info">
+                        <h4 class="contact-box_title">Official Work Time</h4>
+                        <p class="contact-box_text">9:00am - 6:00pm ( Monday - Friday )</p>
+                        <p class="contact-box_text">Saturday &amp; Sunday Closed</p>
+                    </div>
+                </div>
+    
+        </div>
+
+</section>
+
+
+<!-- =================Contact Area============== -->
+
+<div class="contact-wrap">
+    <div class="contact-con">
+
+        <h2>You can connect with us when need help!</h2>
+            <div class="contact-form-grp">
+            <div class="contact-form-con">
+                <input type="text" class="contact-form-item name-item" name="name" id="name" placeholder="Enter Your Name">
+                <i class="fa-regular fa-user"></i>
+            </div>
+        
+            <div class="contact-form-con">
+                <input type="email" class="contact-form-item" name="email" id="email" placeholder="Email Address">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+        </div>
+            <div class="contact-form-con">
+                <select name="subject" id="subject" class="contact-form-item">
+                    <option value="" disabled="" selected="" hidden="">Select Query Topic</option>
+                    <option value="Electrical System">Electrical System</option>
+                    <option value="Auto Car Repair">Auto Car Repair</option>
+                    <option value="Engine Diagnostics">Engine Diagnostics</option>
+                    <option value="Car &amp; Engine Clean">Car &amp; Engine Clean</option>
+                </select>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="contact-msg">
+                <textarea name="message" id="message"class="" placeholder="Message..."></textarea>
+            </div>
+          
+                <button class="p-btn-dark">Send your review</button>
+  
+   
+    </div>
+    <div class="contact-img">
+        <img src="Images/contact-thumb.png" alt="">
+        <img src="Images/contact-bg-shape.png" alt="" class="jump-img">
+    </div>
+
+</div>
+
+
+<div class="map">
+    <div class="title-area">
+        <span class="sub-title"><span class="double-line"></span> LOCATION</span>
+        <h2 class="sec-title">Our Location</h2>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.14245968247!2d-122.43759999999999!3d37.75769999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1695199211033!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+<!-- ================Footer============== -->
+
+
+<footer class="footer-wrapper">
+    <div class="jump" >
+        <img src="Images/footer_bg_2-shape.png" alt="img">
+    </div>
+
+
+    <div class="footer-top">
+        <div class="foot-top-con">
+            <div class="col-xl-2">
+                <div class="footer-logo2">
+                    <a href="index.html"><img src="Images/apex3.png" alt="Dealaro"></a>
+                </div>
+            </div>
+            <div class="col-xl-10">
+                <div class="newsletter-wrap">
+                    <div class="newsletter-content">
+                        <h3 class="newsletter-title">Subscribe Our Newsletter
+                            For Latest Updates</h3>
+                    </div>
+                    <form class="subscribe-form">
+                        <div class="form-group">
+                            <input class="form-control" type="email" placeholder="Email Address" required="">
+                        </div>
+                        <button type="submit" class="p-btn-dark">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="footer-line">
+
+
+    <div class="footer-mid">
+        <div class="foot-card ">
+            <div class="widget footer-widget">
+                <h3 class="widget_title">About Company <span class="line"></span></h3>
+                <div class="as-widget-about">
+                    
+                    <p class="about-text">Centric aplications productize before front end vortals visualize front end is results and value added assertively extend effective methodologies.</p>
+                    <div class="foot-social">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.goggle.com/"><i class="fa-brands fa-google"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot-card ">
+            <div class="widget widget_nav_menu footer-widget">
+                <h3 class="widget_title">Useful Links <span class="line"></span></h3>
+                <div class="menu-all-pages-container">
+                    <ul class="menu-pages">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Car Listing
+                        </a></li>
+                        <li><a href="shop.html">Our Services
+                        </a></li>
+                        <li><a href="blog.html">Our Blog
+                        </a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot-card ">
+            <div class="widget footer-widget">
+                <h3 class="widget_title">Contact Us</h3>
+                <ul class="footer-info-list">
+                    <li class="footer-info"><i class="fa-solid fa-phone"></i><a href="tel:+(163)-1202-0088">+(163)-1202-0088</a></li>
+                    <li class="footer-info"><i class="fa-solid fa-phone"></i><a href="tel:+(163)-1202-0099">+(163)-1202-0099</a></li>
+                    <li class="footer-info"><i class="fa-solid fa-envelope"></i><a href="mailto:info@dealaro.com">info@dealaro.com</a></li>
+                    <li class="footer-info"><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps">835 Middle Country Rd, NY  <br>
+                        11784, USA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-card ">
+            <div class="widget footer-widget">
+                <h3 class="widget_title">Popular Posts</h3>
+                <div class="recent-post-wrap">
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="Images/footer-recent-post-1.png" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-media-body">
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fa-regular fa-clock"></i>15th April, 2023</a>
+                            </div>
+                            <h4 class="post-title"><a  href="blog-details.html">How To Start Car Engine Here</a></h4>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="Images/footer-recent-post-2.png" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-media-body">
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fa-regular fa-clock"></i>20th June, 2023</a>
+                            </div>
+                            <h4 class="post-title"><a  href="blog-details.html">How To Stop Car Engine Here</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>                  
+    </div>
+
+
+
+    <div class="copyright-wrap" style="background: #1B1F29; border-color: #2A2F3D;">
+            <div class="copy-con">
+                <div>
+                    <p class="copyright-text"><i class="fa-regular fa-copyright"></i> Copyright 2023 <a href="index.html"> Apex Autos.</a> All Rights Reserved.</p>
+                </div>
+                <div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="about.html">Terms of use</a></li>
+                            <li><a href="about.html">Privacy Environmental</a></li>
+                            <li><a href="about.html">Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+    </div>
+
+
+</footer>
+
+
+<!-- ===============Scroll-to-Top============== -->
+
+<div id="progress">
+    <span id="progress-value">&#x1F815;</span>
+</div>
+
+
+
+</main>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="JS/script.js"></script>
+
+
+</body>
+</html>

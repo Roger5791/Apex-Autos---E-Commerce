@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Apex Autos</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    
+    <script src="https://kit.fontawesome.com/f2ef633fe4.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- ==========Navigation-Bar============= -->
+
+<header>
+
+    <!-- ============ Top-Nav ============= -->
+    
+        <div class="nav-bar-top-container">
+            <div class="nt-left">
+                <ul class="header-links">
+                    <li><i class="fa-solid fa-phone"></i>
+                    <a href="tel:+25625921589">+(91)98-1202-0088</a></li>
+                    <li>
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:apex.help.org">apex.help.org</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nt-right">
+                <ul class="header-links">
+                    <li>
+                        <button type="button" class="sideCartToggler">
+                            Track Your Order
+                        </button>
+                    </li>
+                    <li>
+                        <i class="far fa-user"></i>
+                        <a href="login.html">Login /</a>
+                       <a href="login.html"> Sign Up</a>
+                    </li>
+                    <li>
+                        <div class="header-social">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.vimeo.com/"><i class="fab fa-vimeo-v"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
+    
+    
+    
+</header>
+
+<!-- ============ Main-Nav ============= -->
+    
+<div class="nav-main">
+    <div class="logo-bg-shape"></div>
+
+        <div class="header-logo">
+            <a href="index.html"><img height="80" src="Images/logo.svg" alt="Apex"></a>
+        </div>
+
+    <div class="nav-main-middle">
+        <div class="nm-middle-con">
+            <nav class="nm-middle">
+                <ul>
+                    <li class="">
+                        <a href="index.html">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="red">ABOUT</a>
+                    </li>
+
+                    <li class="">
+                        <a href="shop.html">STORE</a>                       
+                    </li>
+                    
+                    <li class="">
+                        <a href="blog.html">BLOG</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- <button type="button" class=""><i class="far fa-bars"></i></button> -->
+        </div>
+    </div>
+
+    <div class="nav-main-right">
+        <div class="nm-right-con">
+            <button type="button" class="nav-icon-btn searchIconToggle"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            <button type="button" class="sideCartToggle nav-icon-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge">4</span>
+            </button>
+            <button type="button" class="mobile-toggler nav-icon-btn"><i class="fa-solid fa-bars"></i></button>
+
+            <a href="shop.html" class="p-btn-dark">PURCHASE NOW</a>
+        </div>
+    </div>
+</div>
+
+<main>
+
+ <!-- ==============Cart-popup============= -->   
+
+    <div class="sidemenu-content">
+        <div class="cart-left"></div>
+        <div class="cart-right">
+        <button class="closeButton" onclick="closeCart()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="cart-container">
+            <h3>Shopping cart</h3>
+            <hr class="line">
+            <div class="cart-content">
+                <ul >
+                    <li class="cart-item">
+                        <a href="#">
+                            <img src="Images/footer-recent-post-1.png" alt="Cart Image">
+                        </a> 
+                        <span class="item-name"> 
+                            <strong>Car Engine Plug</strong> <br> 
+                                <span class="quantity"> 1 ×</span>
+                            <span class="cart-price">$ 940.00</span>      
+                        </span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <hr class="line">
+                    <li class="cart-item">
+                        <a href="#">
+                            <img src="Images/footer-recent-post-2.png" alt="Cart Image">
+                        </a> 
+                        <span class="item-name"> 
+                            <strong>Car Air Filter</strong> <br> 
+                                <span class="quantity"> 1 ×</span>
+                            <span class="cart-price">$ 899.00</span>      
+                        </span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <hr class="line">
+                    <li class="cart-item">
+                        <a href="#">
+                            <img src="Images/recent-post-1-1.png" alt="Cart Image">
+                        </a> 
+                        <span class="item-name"> 
+                            <strong>CSK Red Wheel</strong> <br> 
+                                <span class="quantity"> 1 ×</span>
+                            <span class="cart-price">$ 1265.00</span>      
+                        </span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <hr class="line">
+                    <li class="cart-item">
+                        <a href="#">
+                            <img src="Images/recent-post-1-3.png" alt="Cart Image">
+                        </a> 
+                        <span class="item-name"> 
+                            <strong>Car Repair Solution</strong> <br> 
+                                <span class="quantity"> 1 ×</span>
+                            <span class="cart-price">$ 645.00</span>      
+                        </span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <hr class="line">
+                </ul>
+                <p class="cart-total">
+                    <strong>Subtotal:</strong>
+                    <span class="cart-price">
+                        $ 4398.00</span>
+                </p>
+                <p class="cart-btns">
+                    <a href="cart.html" class="p-btn-dark">View cart</a>
+                    <a href="checkout.html" class="p-btn-dark">Checkout</a>
+                </p>
+            </div>
+        </div>
+    </div>
+   
+    </div>
+
+    
+<!-- ====================Search-Box============= -->
+
+<div class="popup-search-box ">
+    <button class="searchClose" onclick="closeSearch()"><i class="fa-solid fa-xmark"></i></button>
+    <form action="shop.html" class="search-mid">
+        <input type="text" placeholder="What are you looking for?">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+</div>
+
+
+
+<!-- ==================== Mobile-Menu============== -->
+    
+<div class="sidemenu-wrapper">
+        
+    <div class="menu-left">
+    <button class="closeTab" onclick="closeTab()"><i class="fa-solid fa-xmark"></i></button>
+    <div class="menmu-container">
+        <div class="menu-logo">
+            <a href="index.html"><img src="Images/logo.svg" alt=""></a>
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="menu-right"></div>
+
+</div>
+
+<div class="i-vid">
+<iframe  
+                            src="https://www.youtube.com/embed/P7fi4hP_y80?si=XPkc9dIKmrxOMUO1?&mute=1">
+                            </iframe>
+</div>
+
+
+
+<!-- =============BreadCrumb============== -->
+
+
+<div class="breadcumb-wrapper background-image" data-overlay="title" data-opacity="7" style="background-image: url(Images/breadcrumb-bg.png);">
+    <!-- bg animated image/ -->
+    <div class="bread-container">
+
+            <div class="bread-content">
+                <div class="breadcumb-content">
+                    <h1 class="breadcumb-title">ABOUT US</h1>
+                    <ul class="breadcumb-menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li>></li>
+                        <li class="active">ABOUT</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bread-img">
+                <div class="breadcumb-thumb">
+                    <img src="Images/breadcumb-thumb.png" alt="img">
+                </div>
+            </div>
+
+        
+    </div>
+</div>
+
+<!-- ==============About========= -->
+
+<div class="main-about main-about-2">
+    <div class="mna-con">
+    <div class="main-img-wrap">
+        <div class="mna-img"><img src="Images/about_2_1.png" alt="" class="about-img-1"></div>
+        <div class="mna-img"><img src="Images/about_2_2.png" alt="" class="about-img-2"></div>
+        <div class="mna-img"><img src="Images/about_thumb_bg_2.png" alt="" class="about-img-3"></div>
+        <div class="about-counter1">
+            <h3 class="counter-title"><span class="counter-number">1</span>k+</h3>
+            <span class="counter-text">BEST CAR DEALER
+                AWARD</span>
+        </div>
+    </div>
+</div>
+
+    <div class="mnc-con">
+    <div class="main-about-content title-area">
+        <h3 class="sub-title left-align">ABOUT OUR COMPANY</h3>
+        <h2 class="sec-title">Welcome to Apex Dealership</h2>
+        <p>Progressively develop out-of-the-box initiatives with superior opportunities. Interactively streamline cross-media partnerships without efficient process improvements. Distinctively network exceptional e-services.</p>
+
+        <div class="list-column2">
+            <div class="checklist">
+                <ul>
+                    <li><img src="Images/check.svg" alt="img"> We’re Here When You Need Us</li>
+                    <li><img src="Images/check.svg" alt="img"> Service &amp; Maintenance</li>
+                    <li><img src="Images/check.svg" alt="img"> In House Financing</li>
+                </ul>
+            </div>
+            <div class="checklist">
+                <ul>
+                    <li><img src="Images/check.svg" alt="img"> Best Collection</li>
+                    <li><img src="Images/check.svg" alt="img"> Famous Brands</li>
+                    <li><img src="Images/check.svg" alt="img">Trusted Car Dealer</li>
+                </ul>
+            </div>
+        </div>
+        <div class="about-btn-group">
+            <a class="p-btn-dark" href="about.html">LEARN MORE</a>
+            <div class="about-grid">
+                <div class="about-grid_icon">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <h3 class="about-grid_title">Have Queries? Click Below Link</h3>
+                    <span class="about-grid_link"><img class="me-2" src="Images/hand.svg" alt="img"><a href="contact.html" class="gr-link">FAQ’S</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+
+
+<!-- =============== Process ============ -->
+
+<section class="process-sec " style="background-image: url(Images/work-process-bg.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+    <div class="process-con">
+        <div class="title-area process-head">
+            <span class="sub-title"><span class="double-line"></span> HOW IT WORK</span>
+            <h2 class="sec-title">Easy 3-Step Working Process</h2>
+        </div>
+        <div class="process-content">
+            <div class="col-md-6 col-lg-4 process-box-wrap">
+                <div class="process-box">
+                    <div class="process-box_icon background-image" style="background-image: url(Images/process-icon-bg2.svg);">
+                        <img class="process-icon" src="Images/process-icon-4-1.svg" alt="icon">
+                        <div class="process-box_number">01</div>
+                       
+                    </div>
+                    <h2 class="process-box_title box-title">Replenishment
+                        &amp; Picking</h2>
+                    <p class="process-box_text">Professionally unleash collaborative e-services
+                        whereas frictionless niches. Conveniently
+                        mesh cooperative quality vectors.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 process-box-wrap">
+                <div class="process-box">
+                    <div class="process-box_icon background-image" style="background-image: url(Images/process-icon-bg2.svg);">
+                        <img class="process-icon" src="Images/process-icon-4-2.svg" alt="icon">
+                        <div class="process-box_number">02</div>
+      
+                    </div>
+                    <h2 class="process-box_title box-title">Transportation
+                        Process</h2>
+                    <p class="process-box_text">Transportation unleash collaborative e-services
+                        whereas frictionless niches. Conveniently
+                        mesh cooperative quality vectors.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 process-box-wrap">
+                <div class="process-box">
+                    <div class="process-box_icon background-image" style="background-image: url(Images/process-icon-bg2.svg);">
+                        <img class="process-icon" src="Images/process-icon-4-3.svg" alt="icon">
+                        <div class="process-box_number">03</div>
+                    </div>
+                    <h2 class="process-box_title box-title">Packaging
+                        &amp; Distribution</h2>
+                    <p class="process-box_text">Distribution unleash collaborative e-services
+                        whereas frictionless niches. Conveniently
+                        mesh cooperative quality vectors.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- =====================Team-Swiper============== -->
+            
+<div class="team-swiper team-swiper-2">
+
+    <div class="title-area">
+        <h3 class="sub-title"><span class="double-line"></span> TEAM MEMBERS</h3>
+        <h2 class="sec-title">Our Expert Team Members</h2>
+    </div>
+
+
+
+
+<div class="team-container swiper">
+<div class="team-wrapper swiper-wrapper">
+    <div class="team-card-2 swiper-slide">   
+        <div class="team-img">
+            <img src="Images/team-2-1.png" alt="Team">
+        </div>
+        <div class="team-content">
+            <h3 class="team-title h4"><a href="team-details.html" tabindex="-1">Anjelina Sinthiya</a></h3>
+            <span class="team-desig">Company CEO</span>
+            <div class="as-social style-2">
+                <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://linkedin.com/" tabindex="-1"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://google.com/" tabindex="-1"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-card-2 swiper-slide">   
+        <div class="team-img">
+            <img src="Images/team-2-2.png" alt="Team">
+        </div>
+        <div class="team-content">
+            <h3 class="team-title h4"><a href="team-details.html" tabindex="-1">Dean Winchester</a></h3>
+            <span class="team-desig">Customer Advisor</span>
+            <div class="as-social style-2">
+                <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://linkedin.com/" tabindex="-1"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://google.com/" tabindex="-1"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-card-2 swiper-slide">   
+        <div class="team-img">
+            <img src="Images/team-2-3.png" alt="Team">
+        </div>
+        <div class="team-content">
+            <h3 class="team-title h4"><a href="team-details.html" tabindex="-1">Jenifer Lopez</a></h3>
+            <span class="team-desig">Managing Director</span>
+            <div class="as-social style-2">
+                <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://linkedin.com/" tabindex="-1"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://google.com/" tabindex="-1"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-card-2 swiper-slide">   
+        <div class="team-img">
+            <img src="Images/team-2-4.png" alt="Team">
+        </div>
+        <div class="team-content">
+            <h3 class="team-title h4"><a href="team-details.html" tabindex="-1">Chris Adams</a></h3>
+            <span class="team-desig">Company Secretary</span>
+            <div class="as-social style-2">
+                <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://linkedin.com/" tabindex="-1"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://google.com/" tabindex="-1"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-card-2 swiper-slide">   
+        <div class="team-img">
+            <img src="Images/team-2-1.png" alt="Team">
+        </div>
+        <div class="team-content">
+            <h3 class="team-title h4"><a href="team-details.html" tabindex="-1">Anjelina Jolie</a></h3>
+            <span class="team-desig">Company CEO</span>
+            <div class="as-social style-2">
+                <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://linkedin.com/" tabindex="-1"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://google.com/" tabindex="-1"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-card-2 swiper-slide">   
+        <div class="team-img">
+            <img src="Images/team-2-2.png" alt="Team">
+        </div>
+        <div class="team-content">
+            <h3 class="team-title h4"><a href="team-details.html" tabindex="-1">Dean Winchester</a></h3>
+            <span class="team-desig">Customer Advisor</span>
+            <div class="as-social style-2">
+                <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://linkedin.com/" tabindex="-1"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://google.com/" tabindex="-1"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-card-2 swiper-slide">   
+        <div class="team-img">
+            <img src="Images/team-2-3.png" alt="Team">
+        </div>
+        <div class="team-content">
+            <h3 class="team-title h4"><a href="team-details.html" tabindex="-1">Jenifer Lopez</a></h3>
+            <span class="team-desig">Managing Director</span>
+            <div class="as-social style-2">
+                <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://linkedin.com/" tabindex="-1"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://google.com/" tabindex="-1"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-card-2 swiper-slide">   
+        <div class="team-img">
+            <img src="Images/team-2-4.png" alt="Team">
+        </div>
+        <div class="team-content">
+            <h3 class="team-title h4"><a href="team-details.html" tabindex="-1">Chris Adams</a></h3>
+            <span class="team-desig">Company Secretary</span>
+            <div class="as-social style-2">
+                <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://linkedin.com/" tabindex="-1"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://google.com/" tabindex="-1"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+
+   
+
+    </div>
+    <div class="swiper-button-prev team-prev"><i class="fa-solid fa-arrow-left"></i></div>
+    <div class="swiper-button-next team-next"><i class="fa-solid fa-arrow-right"></i></div>
+</div>
+
+</div>
+
+
+<!-- ================= Why-Us============ -->
+
+<div class="Why-us-con" style="background-image: url(Images/wcu_shape2.png); background-size: cover;
+background-position: right; background-repeat: no-repeat;">
+    <div class="why-content">
+        <div class="flex">
+            <div class="why-data-img">
+                <div class="why-img" style="background-image: url(Images/wcu-4.png); background-position: right; background-repeat: no-repeat; background-size: cover;">
+                    <a class="play-btn popup-video">
+                        <i class="fa-sharp fa-solid fa-play"></i>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="why-data">
+                <div class="wcu-wrap wcu-wrap-about">
+                    <div class="title-area">
+                        <span class="sub-title">WHY CHOOSE US </span>
+                        <h2 class="sec-title">We Got Your Covered. Good Cars
+                            Good people guarantee.</h2>
+                        <p class="content">Uniquely reintermediate distinctive niche market wherea interoperable infomediarie. Completely negotiate seamless partnerships via cutting-edge expertise. Rapidiously reintermediate cooperative expertise rather than high-quality growth strategies.</p>
+                    </div>
+                    <div class="flex " data-slide-show="2" data-lg-slide-show="2" data-md-slide-show="2" data-sm-slide-show="2" data-xs-slide-show="1" data-arrows="false">
+                        
+                        
+                    <div class="wcu-card-con">
+                            <div class="wcu-card">
+                                <div class="wcu-icon">
+                                    <img src="Images/wcu-box-icon-1.svg" alt="icon">
+                                </div>
+                                <h3 class="card-title h4">Wide range of brands</h3>
+                                <p class="content">Dynamically redefine flexible core competencies with synergistic.</p>
+                            </div>
+                    
+                            <div class="wcu-card">
+                                <div class="wcu-icon">
+                                    <img src="Images/wcu-box-icon-2.svg" alt="icon">
+                                </div>
+                                <h3 class="">Get Reasonable Price</h3>
+                                <p class="content">Reasonable redefine flexible core competencies with synergistic.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="black-con black-con-about">
+    <div  style="background-image: url(Images/counter_bg.png); background-size: cover;
+    background-position: center; background-repeat: no-repeat;">
+        <div class="black-box ">
+            <div class="col-sm-6 col-xl-3">
+                <div class="counter-card2">
+                    <div class="counter-card_icon">
+                        <img src="Images/counter_icon_2_1.svg" alt="img">
+                    </div>
+                    <div class="card-details">
+                        <h2 class="counter-card_number"><span class="counter-number">27,600</span>+</h2>
+                        <p class="counter-card_text">CARS FOR SALE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="counter-card2">
+                    <div class="counter-card_icon">
+                        <img src="Images/counter_icon_2_2.svg" alt="img">
+                    </div>
+                    <div class="card-details">
+                        <h2 class="counter-card_number"><span class="counter-number">1,600</span>+</h2>
+                        <p class="counter-card_text">VERIFIED DEALERS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="counter-card2">
+                    <div class="counter-card_icon">
+                        <img src="Images/counter_icon_2_3.svg" alt="img">
+                    </div>
+                    <div class="card-details">
+                        <h2 class="counter-card_number"><span class="counter-number">25,600</span>+</h2>
+                        <p class="counter-card_text">HAPPY CUSTOMERS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="counter-card2">
+                    <div class="counter-card_icon">
+                        <img src="Images/counter_icon_2_4.svg" alt="img">
+                    </div>
+                    <div class="card-details">
+                        <h2 class="counter-card_number"><span class="counter-number">18,600</span>+</h2>
+                        <p class="counter-card_text">ACTIVE USERS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+<!-- ====================Feedback=============== -->
+
+    <section class="feedback" style="background-image: url(Images/testi_bg.png); background-position: center; background-size: cover;">
+        <div class="title-area feedback-head">
+            <span class="sub-title"><span class="double-line"></span> TESTIMONIALS</span>
+            <h2 class="sec-title">Our Customer Feedback</h2>
+        </div>
+        
+        <div class="feedback-con swiper">
+            <div class="feedback-wrap swiper-wrapper">
+                <div class="feed-card swiper-slide">
+                    <div class="feed-icon"><img src="Images/quote-icon2.svg" alt=""></div>
+                    <div class="feed-content">
+                        <p> Compellingly deploy premier web services via granular total linkage. Professionally strategize resource maximizing portals for cross-unit systems. Monotonectally Quality vectors with virtual supply chains.</p>
+                        <div class="testi-box_profile">
+                            <div class="testi-dp">
+                                <img src="Images/testi-profile-3.png" alt="img">
+                            </div>
+                            <div class="details">
+                                <h4 class="testi-box_name">Alex Frunklin</h4>
+                                <span class="testi-box_desig">General Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed-card swiper-slide">
+                    <div class="feed-icon"><img src="Images/quote-icon2.svg" alt=""></div>
+                    <div class="feed-content">
+                        <p> Monotonectal deploy premier web services via granular total linkage. Professionally strategize resource maximizing portals for cross-unit systems. Compelling Quality vectors with virtual supply chains.</p>
+                        <div class="testi-box_profile">
+                            <div class="testi-dp">
+                                <img src="Images/testi-profile-2.png" alt="img">
+                            </div>
+                            <div class="details">
+                                <h4 class="testi-box_name">Eva Green</h4>
+                                <span class="testi-box_desig">Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed-card swiper-slide">
+                    <div class="feed-icon"><img src="Images/quote-icon2.svg" alt=""></div>
+                    <div class="feed-content">
+                        <p> Professionally deploy premier web services via granular total linkage. Compellingly strategize resource maximizing portals for cross-unit systems. Monotonectally Quality vectors with virtual supply chains.</p>
+                        <div class="testi-box_profile">
+                            <div class="testi-dp">
+                                <img src="Images/testi-profile-1.png" alt="img">
+                            </div>
+                            <div class="details">
+                                <h4 class="testi-box_name">John Abraham</h4>
+                                <span class="testi-box_desig">Operation Head</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed-card swiper-slide">
+                    <div class="feed-icon"><img src="Images/quote-icon2.svg" alt=""></div>
+                    <div class="feed-content">
+                        <p> Compellingly deploy premier web services via granular total linkage. Professionally strategize resource maximizing portals for cross-unit systems. Monotonectally Quality vectors with virtual supply chains.</p>
+                        <div class="testi-box_profile">
+                            <div class="testi-dp">
+                                <img src="Images/testi-profile-3.png" alt="img">
+                            </div>
+                            <div class="details">
+                                <h4 class="testi-box_name">Alex Frunklin</h4>
+                                <span class="testi-box_desig">General Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed-card swiper-slide">
+                    <div class="feed-icon"><img src="Images/quote-icon2.svg" alt=""></div>
+                    <div class="feed-content">
+                        <p> Monotonectal deploy premier web services via granular total linkage. Professionally strategize resource maximizing portals for cross-unit systems. Compelling Quality vectors with virtual supply chains.</p>
+                        <div class="testi-box_profile">
+                            <div class="testi-dp">
+                                <img src="Images/testi-profile-2.png" alt="img">
+                            </div>
+                            <div class="details">
+                                <h4 class="testi-box_name">Eva Green</h4>
+                                <span class="testi-box_desig">Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed-card swiper-slide">
+                    <div class="feed-icon"><img src="Images/quote-icon2.svg" alt=""></div>
+                    <div class="feed-content">
+                        <p> Professionally deploy premier web services via granular total linkage. Compellingly strategize resource maximizing portals for cross-unit systems. Monotonectally Quality vectors with virtual supply chains.</p>
+                        <div class="testi-box_profile">
+                            <div class="testi-dp">
+                                <img src="Images/testi-profile-1.png" alt="img">
+                            </div>
+                            <div class="details">
+                                <h4 class="testi-box_name">John Abraham</h4>
+                                <span class="testi-box_desig">Operation Head</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+            </div>
+            <div class="swiper-button-prev feed-prev"><i class="fa-solid fa-arrow-left"></i></div>
+             <div class="swiper-button-next feed-next"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+
+
+    </section>
+
+    
+<!-- =================Brands=================== -->
+
+<div class="Brand-con" style="background-image: url(Images/blog_bg_1.png); background-position: center; background-size: cover;">
+    <div class="brand-head">
+
+                <div class="title-area">
+                    <h2 class="client-title"><span class="double-line"></span> WE HAVE TRUSTED MORE THEN <span class="text-theme">20K+</span>GLOBAL CLIENTS</h2>
+                </div>
+
+                
+                
+            <div class="brand-swiper swiper">
+                <div class="brand-swiper-wrapper swiper-wrapper" >
+                    <div class="swiper-slide brand-slidee" >
+                    <img src="Images/bmw-l.png" alt="Client Logo">
+                </div>
+                    <div class="swiper-slide brand-slidee" >
+                    <img src="Images/audi-l.png" alt="Client Logo">
+                </div>
+                    <div class="swiper-slide brand-slidee" >
+                    <img src="Images/mercedes.png" alt="Client Logo">
+                </div>
+                    <div class="swiper-slide brand-slidee" >
+                    <img src="Images/nissan.png" alt="Client Logo">
+                </div>
+                    <div class="swiper-slide brand-slidee" >
+                    <img src="Images/volvo.png" alt="Client Logo">
+                </div>
+                    <div class="swiper-slide brand-slidee" >
+                    <img src="Images/landro.png" alt="Client Logo">
+                </div>
+                
+                </div>
+
+
+        </div>
+    </div>
+</div> 
+
+
+
+<!-- ================Footer============== -->
+
+
+<footer class="footer-wrapper">
+    <div class="jump" >
+        <img src="Images/footer_bg_2-shape.png" alt="img">
+    </div>
+
+
+    <div class="footer-top">
+        <div class="foot-top-con">
+            <div class="col-xl-2">
+                <div class="footer-logo2">
+                    <a href="index.html"><img src="Images/apex3.png" alt="Dealaro"></a>
+                </div>
+            </div>
+            <div class="col-xl-10">
+                <div class="newsletter-wrap">
+                    <div class="newsletter-content">
+                        <h3 class="newsletter-title">Subscribe Our Newsletter
+                            For Latest Updates</h3>
+                    </div>
+                    <form class="subscribe-form">
+                        <div class="form-group">
+                            <input class="form-control" type="email" placeholder="Email Address" required="">
+                        </div>
+                        <button type="submit" class="p-btn-dark">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="footer-line">
+
+
+    <div class="footer-mid">
+        <div class="foot-card ">
+            <div class="widget footer-widget">
+                <h3 class="widget_title">About Company <span class="line"></span></h3>
+                <div class="as-widget-about">
+                    
+                    <p class="about-text">Centric aplications productize before front end vortals visualize front end is results and value added assertively extend effective methodologies.</p>
+                    <div class="foot-social">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.goggle.com/"><i class="fa-brands fa-google"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot-card ">
+            <div class="widget widget_nav_menu footer-widget">
+                <h3 class="widget_title">Useful Links <span class="line"></span></h3>
+                <div class="menu-all-pages-container">
+                    <ul class="menu-pages">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Car Listing
+                        </a></li>
+                        <li><a href="service.html">Our Services
+                        </a></li>
+                        <li><a href="blog.html">Our Blog
+                        </a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot-card ">
+            <div class="widget footer-widget">
+                <h3 class="widget_title">Contact Us</h3>
+                <ul class="footer-info-list">
+                    <li class="footer-info"><i class="fa-solid fa-phone"></i><a href="tel:+(163)-1202-0088">+(163)-1202-0088</a></li>
+                    <li class="footer-info"><i class="fa-solid fa-phone"></i><a href="tel:+(163)-1202-0099">+(163)-1202-0099</a></li>
+                    <li class="footer-info"><i class="fa-solid fa-envelope"></i><a href="mailto:info@dealaro.com">info@dealaro.com</a></li>
+                    <li class="footer-info"><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps">835 Middle Country Rd, NY  <br>
+                        11784, USA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-card ">
+            <div class="widget footer-widget">
+                <h3 class="widget_title">Popular Posts</h3>
+                <div class="recent-post-wrap">
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="Images/footer-recent-post-1.png" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-media-body">
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fa-regular fa-clock"></i>15th April, 2023</a>
+                            </div>
+                            <h4 class="post-title"><a  href="blog-details.html">How To Start Car Engine Here</a></h4>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="Images/footer-recent-post-2.png" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-media-body">
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="fa-regular fa-clock"></i>20th June, 2023</a>
+                            </div>
+                            <h4 class="post-title"><a  href="blog-details.html">How To Stop Car Engine Here</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>                  
+    </div>
+
+
+
+    <div class="copyright-wrap" style="background: #1B1F29; border-color: #2A2F3D;">
+            <div class="copy-con">
+                <div>
+                    <p class="copyright-text"><i class="fa-regular fa-copyright"></i> Copyright 2023 <a href="index.html"> Apex Autos.</a> All Rights Reserved.</p>
+                </div>
+                <div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="about.html">Terms of use</a></li>
+                            <li><a href="about.html">Privacy Environmental</a></li>
+                            <li><a href="about.html">Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+    </div>
+
+
+</footer>
+
+
+<!-- ===============Scroll-to-Top============== -->
+
+<div id="progress">
+    <span id="progress-value">&#x1F815;</span>
+</div>
+
+
+
+</main>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="JS/script.js"></script>
+<script src="JS/script-2.js"></script>
+
+</body>
+</html>
